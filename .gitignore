@@ -3,3 +3,5 @@ tokens/
 demo.js
 response.txt
 .env
+old/
+build/

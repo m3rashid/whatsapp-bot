@@ -1,16 +1,32 @@
 {
   "name": "whatsapp-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Whatsapp Bot",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc && node build/index.js",
+    "dev": "NODE_ENV=dev nodemon -e ts --exec \"npm run compile\"",
+    "start": "NODE_ENV=prod node build/index.js",
+    "lint": "eslint . --ext .ts"
   },
-  "author": "MD Rashid Hussain",
-  "license": "ISC",
+  "repository": "https://github.com/m3rashid/whatsapp-bot.git",
+  "author": "MD Rashid Hussain <mdrashid.hussain.786.01@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mongoose-auto-increment": "^5.0.34",
+    "@types/node": "16",
+    "@types/pdfkit": "^0.12.3",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.6.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.4"
+  },
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "mongoose": "^6.0.12",
-    "venom-bot": "^4.0.1"
+    "dotenv": "^11.0.0",
+    "mongoose": "^6.1.5",
+    "mongoose-auto-increment": "^5.0.1",
+    "pdfkit": "^0.13.0",
+    "venom-bot": "^4.0.4"
   }
 }
