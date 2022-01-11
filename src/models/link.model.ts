@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-interface LinkSchema extends mongoose.Document {
+interface LinkDocument extends mongoose.Document {
   url: string;
   title: string;
   description: string;
@@ -14,5 +14,5 @@ const linkSchema = new mongoose.Schema({
   imageUrl: String,
 });
 
-const Link = mongoose.model<LinkSchema>("Link", linkSchema);
+const Link = mongoose.model<LinkDocument>("Link", linkSchema);
 export default Link;

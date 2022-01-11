@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import autoIncrement from "mongoose-auto-increment";
 autoIncrement.initialize(mongoose.connection);
 
-interface DoubtSchema extends mongoose.Document {
+interface DoubtDocument extends mongoose.Document {
   token: number;
   question: string;
   answered: boolean;
@@ -39,5 +39,5 @@ doubtSchema.plugin(autoIncrement.plugin, {
   incrementBy: 1,
 });
 
-const Doubt = mongoose.model<DoubtSchema>("Doubt", doubtSchema);
+const Doubt = mongoose.model<DoubtDocument>("Doubt", doubtSchema);
 export default Doubt;
