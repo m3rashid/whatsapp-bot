@@ -2,14 +2,18 @@
 
 # 💬 whatsapp-bot
 
-**General-utility WhatsApp bot** built on venom-bot, with MongoDB-backed commands.
+### General-utility WhatsApp bot built on venom-bot, with MongoDB-backed commands
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 </div>
 
 ---
+
+## 📖 Overview
+
+A general-purpose WhatsApp bot built on `venom-bot`. Supports group management, link storage, and a doubt Q&A system with MongoDB persistence and PDF generation.
 
 ## 📋 Commands
 
@@ -25,7 +29,16 @@
 | `/answer <id> "<answer>"` | Answer a doubt |
 | `/answered <id>` | Mark doubt as answered |
 
-## 🛠 Tech
+## 🏗 Project structure
+
+```
+whatsapp-bot/
+├── src/          # TypeScript source
+├── tsconfig.json
+└── nodemon.json
+```
+
+## 🛠 Tech stack
 
 `TypeScript` · `venom-bot` · `MongoDB` · `Mongoose` · `pdfkit`
 
@@ -40,4 +53,4 @@ npm run dev
 
 ## 📄 License
 
-MIT
+MIT © [m3rashid](https://github.com/m3rashid)
